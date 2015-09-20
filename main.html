@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>sentinel</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="pulse.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="popup-alarm">
+      <h2 id="alarm-title">ALERT!</h2>
+      <h5 id="alarm-subtitle">Someone has opened your car door!</h5>
+      <div class='container'>
+        <span id="panic-button" class='pulse-button'>
+          <h1 id="panic-button-text">HELP!</h1>
+        </span>
+      </div>
+      <a id="dismiss-button" class="button" style="margin-top: 5vh;">my bad! false alarm</a>
+    </div>
+    <input type="checkbox" id="nav-check">
+      <label for="nav-check" id="nav-icon3">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </input>
+    <div id="content">
+      <embed type="image/svg+xml" src="sentinal_logo.svg" id="logo" />
+      <h1 id="login-title">sentinel</h1>
+      <h4 id="login-subtitle">your silent car alarm</h4>
+      <input type="checkbox" id="lock-toggle" class="round-button">
+        <div class="round-button">
+          <label for="lock-toggle" id="circle" class="unlocked round-button-circle">
+            <p id="button-text">LOCK</p>
+          </label>
+        </div>
+      </input>
+      <p id="suppl-text">Press the button to arm your car!</p>
+    </div>
+
+    <div class="slide-menu">
+      <h1 id="user"></h1>
+      <nav class="menu">
+        <li><a href="history.html">History</a></li>
+        <li><a href="login.html">Log Out</a></li>
+      </nav>
+    </div>
+    <script>
+      $("#user").text(getName());
+      watchIsArmed();
+      alarm();
+    </script>
+  </body>
+</html>
