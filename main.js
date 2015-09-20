@@ -58,13 +58,13 @@ $(document).ready(function(){
     }
   });
 
-  var 911 = new Audio('911.mp3');
-  var AAA = new Audio('AAA.mp3');
+  var 911call = new Audio('911.mp3');
+  var AAAcall = new Audio('AAA.mp3');
   $('911call').click(function(){
-    911.play();
+    911call.play();
   });
   $('AAAcall').click(function(){
-    AAA.play();
+    AAAcall.play();
   });
 });
 
