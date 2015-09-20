@@ -18,11 +18,14 @@ $(document).ready(function(){
   // response to "panicking" -- pause audio
   $('#panic-button').click(function(){
     audio.pause();
+    $('#popup-alarm').hide();
+    $('#response').show();
   });
   // dismiss listener-- hide the popup and pause audio
   // set "silence" to true
   $('#dismiss-button').click(function(){
     $('#popup-alarm').hide();
+    $('#nav-icon3').show();
     audio.pause();
     lastEvent.update({
       "silence": true
@@ -85,6 +88,7 @@ function alarm(){
     if(isArmed && childSnapshot.val().event == "alarm" && childSnapshot.val().time > Date.now()/1000 - 30000){
       audio.play();
       $('#popup-alarm').show();
+      $('#nav-icon3').hide();
       lastEvent = childSnapshot.ref();
     }
   });

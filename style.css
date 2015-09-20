@@ -330,3 +330,42 @@ label {
 .history-event h5{
   margin-bottom: 0;
 }
+#response{
+  background-color: white;
+  height: 95%;
+  width: 95%;;
+  z-index: 999;
+  position: fixed;
+  display: none;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3%;
+}
+#response h2{
+  color: #dcdcdc;
+  text-align: center;
+  padding-top: 25vh;
+  margin-bottom: 5vh;
+  font-size: 5em;
+  position: relative;
+}
+#response h4{
+  color: #dcdcdc;
+  text-align: center;
+  margin-bottom: 0vh;
+  position: relative;
+}
+.response-suggestion{
+  color: #dcdcdc;
+  text-align: center;
+  float:top;
+  margin-top: 15vh;
+  margin-bottom: -15vh;
+  font-size: 2em;
+  position: relative;
+}
+#response-button{
+  text-align: center;
+  position: relative;
+  margin-top: 5vh;
+}

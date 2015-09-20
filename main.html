@@ -20,6 +20,14 @@
       </div>
       <a id="dismiss-button" class="button" style="margin-top: 5vh;">my bad! false alarm</a>
     </div>
+    <div id="response">
+      <h2> OH NO! </h2>
+      <h4> CALL 9-1-1? </h4>
+      <h4> CALL TRIPLE-EH? </h4>
+      <div id="response-button">
+        <a id="close-response" class="button" href="#">close</a>
+      </div>
+    </div>
     <input type="checkbox" id="nav-check">
       <label for="nav-check" id="nav-icon3">
         <span></span>
@@ -53,6 +61,10 @@
       $("#user").text(getName());
       watchIsArmed();
       alarm();
+      $("#close-response").click(function(){
+        $("#response").hide();
+        $('#nav-icon3').show();
+      });
     </script>
   </body>
 </html>
