@@ -33,6 +33,9 @@ $(document).ready(function(){
     lastEvent.update({
       "silence": true
     });
+    usersRef.child(getName()).update({
+      "armed": false
+    });
   });
 
   // change text for unlock/lock button and hint text
@@ -53,6 +56,15 @@ $(document).ready(function(){
         "armed": false
       });
     }
+  });
+
+  var 911 = new Audio('911.mp3');
+  var AAA = new Audio('AAA.mp3');
+  $('911call').click(function(){
+    911.play();
+  });
+  $('AAAcall').click(function(){
+    AAA.play();
   });
 });
 
