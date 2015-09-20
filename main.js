@@ -20,6 +20,9 @@ $(document).ready(function(){
     audio.pause();
     $('#popup-alarm').hide();
     $('#response').show();
+    usersRef.child(getName()).update({
+      "armed": false
+    });
   });
   // dismiss listener-- hide the popup and pause audio
   // set "silence" to true
