@@ -1,9 +1,14 @@
 # Sentinel-App
-## Project for Hack the North
-### See it in action - Demo: https://youtu.be/K56j69PMjVE
+
+#### Created at Hack the North 2015
+#### Authors
+    - @airmanopus: Hardware
+    - @michellevo: UI
+    - @katiea: Design, PM, Database, Deployment
+#### See it in action - Demo: https://youtu.be/K56j69PMjVE
 #### Watch for updates at: https://sentinel-app.firebaseapp.com/
 
-# Description
+## Description
 
 It all began with a break in. Then a second.
 
@@ -27,3 +32,18 @@ Give us a try - we're positive you'll trust your car's security to Sentinel.
 
 ================================================================================================================
 
+## Updates
+
+9/29 : Updated README
+
+================================================================================================================
+
+## To be implemented
+
+1. Data tracking: Store Break in's and Touch alerts in aggregate databse
+2. Account authentication: Replace Demo Accounts with live accounts
+3. GPS Locator: Based on current location, can log GPS coordinates
+4. Security Risk Assessment: Alerts user when parking in an area deemed "unsafe" based on aggregate data
+5. Batch Reporting: See trends in your neighborhood compared to city crime data
+6. Proximity Disarm: As you approch car with phone, will disarm automatically (optional feature)
+7. Smart Watch integration: Pebble, Apple Watch, Microsoft Band, Samsung Gear
