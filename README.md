@@ -46,4 +46,5 @@ Give us a try - we're positive you'll trust your car's security to Sentinel.
 4. Security Risk Assessment: Alerts user when parking in an area deemed "unsafe" based on aggregate data
 5. Batch Reporting: See trends in your neighborhood compared to city crime data
 6. Proximity Disarm: As you approch car with phone, will disarm automatically (optional feature)
-7. Smart Watch integration: Pebble, Apple Watch, Microsoft Band, Samsung Gear
+7. Alarm Escalation: Actually contact authorities based on your area (non-emergency) or AAA
+8. Smart Watch integration: Pebble, Apple Watch, Microsoft Band, Samsung Gear
